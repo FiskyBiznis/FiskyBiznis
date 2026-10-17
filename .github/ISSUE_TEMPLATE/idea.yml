@@ -1,0 +1,26 @@
+name: Idea
+description: Capture an idea. One sentence is enough.
+title: "Idea: "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What is it and why do you want it?
+    validations:
+      required: true
+  - type: dropdown
+    id: size
+    attributes:
+      label: Gut-feel size
+      options:
+        - Quick task (single chat)
+        - Multi-part build (coordinator + threads)
+        - Ongoing area (keep feeding it)
+        - Not sure
+  - type: textarea
+    id: needs
+    attributes:
+      label: Anything only you can provide?
+      description: API keys, accounts, settings, data.
